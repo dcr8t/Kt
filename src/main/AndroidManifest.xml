@@ -15,7 +15,7 @@
     android:theme="@style/AppTheme"
     tools:ignore="GoogleAppIndexingWarning">
     <activity
-      android:name="activity.MainActivity"
+      android:name=".activity.MainActivity"
       android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
       android:exported="true"
       android:windowSoftInputMode="adjustPan">
@@ -25,5 +25,18 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+
+    <activity
+      android:name="com.google.android.gms.ads.AdActivity"
+      android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+      android:theme="@android:style/Theme.Translucent" />
+
+    <meta-data
+      android:name="com.google.android.gms.version"
+      android:value="@integer/google_play_services_version" />
+
+    <meta-data
+      android:name="com.google.android.gms.ads.APPLICATION_ID"
+      android:value="@string/app_ads_id" />
   </application>
 </manifest>
