@@ -1,7 +1,12 @@
-# Set the default behavior, in case people don't have core.autocrlf set.
-* text eol=lf
-*.bat eol=crlf
-*.jar binary
-*.png binary
-*.webp binary
-*.gif binary
+#
+# https://help.github.com/articles/dealing-with-line-endings/
+#
+# Linux start script should use lf
+/gradlew        text eol=lf
+
+# These are Windows script files and should use crlf
+*.bat           text eol=crlf
+
+# Binary files should be left untouched
+*.jar           binary
+
